@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+     var UserNumber =10;
+     var RandomNumber = Math.floor(Math.random()* UserNumber)+1;
+     var count=0;
+
+    while(count<5)
+
+     {
+
+     var attempt=prompt("Please pick a number between 1 and "+ UserNumber);
+     if(attempt== RandomNumber)
+    {
+      alert("Congratz you Have the Correct Number !");
+      break;
+    }
+        else if(attempt !== RandomNumber)
+        {
+
+        count++;
+
+
+     }
+
+
+}
+
+if(count>=5){
+
+document.write(" you have No more Tries Left. Please F5 to Play Again")
+     
+}
+
+ 
+    </script>
+</body>
+</html>
